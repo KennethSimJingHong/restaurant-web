@@ -2,6 +2,7 @@ import {useSelector} from "react-redux";
 
 import classes from "./Menu.module.css";
 import AddToCartButton from "../Shop/AddToCartButton";
+import img from "../../img/pasta.png";
 
 const FOOD_DATA = [
     {
@@ -9,42 +10,42 @@ const FOOD_DATA = [
         price: "12",
         title: "Pasta",
         description: "Pasta is a type of food typically made from an unleavened dough.",
-        image: "https://www.freepnglogos.com/uploads/pasta-png/pasta-seasonings-product-poddar-foods-13.png",
+        image: img,
     },
     {
         id: "f2",
         price: "13",
         title: "Spagehetti",
         description: "Pasta is a type of food typically made from an unleavened dough.",
-        image: "https://www.freepnglogos.com/uploads/pasta-png/pasta-seasonings-product-poddar-foods-13.png",
+        image: img,
     },
     {
         id: "f3",
         price: "19",
         title: "Chicken Rice",
         description: "Pasta is a type of food typically made from an unleavened dough.",
-        image: "https://www.freepnglogos.com/uploads/pasta-png/pasta-seasonings-product-poddar-foods-13.png",
+        image: img,
     },
     {
         id: "f4",
         price: "15",
         title: "Salad",
         description: "Pasta is a type of food typically made from an unleavened dough.",
-        image: "https://www.freepnglogos.com/uploads/pasta-png/pasta-seasonings-product-poddar-foods-13.png",
+        image: img,
     },
     {
         id: "f5",
         price: "9",
         title: "Fish & Chip",
         description: "Pasta is a type of food typically made from an unleavened dough.",
-        image: "https://www.freepnglogos.com/uploads/pasta-png/pasta-seasonings-product-poddar-foods-13.png",
+        image: img,
     },
     {
         id: "f6",
         price: "17",
         title: "Pasta",
         description: "Pasta is a type of food typically made from an unleavened dough.",
-        image: "https://www.freepnglogos.com/uploads/pasta-png/pasta-seasonings-product-poddar-foods-13.png",
+        image: img,
     },
 ];
 

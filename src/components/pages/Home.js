@@ -1,7 +1,9 @@
 import {Link} from "react-router-dom";
+import { Fragment, useEffect } from "react";
 
 import classes from "./Home.module.css";
-import { Fragment, useEffect } from "react";
+import img from "../../img/spaghetti.png";
+
 
 const Home = () => {
     const exploreBtnHandler = () => {
@@ -60,7 +62,7 @@ const Home = () => {
                     <button onClick={exploreBtnHandler}>Explore Us</button>
                     <Link to="/menu"><button>Order Now</button></Link>
                 </div>
-                    <img src="https://pngimg.com/uploads/spaghetti/spaghetti_PNG110.png" alt="pasta"/>
+                    <img src={img} alt="pasta"/>
                     <div className={classes.background}></div>
             </div>
             <div className={classes.wrapper2 + " section"}>
