@@ -24,6 +24,7 @@ function App() {
           <Route path="/" element={<Navigate to="/home"/>}></Route>
           <Route path="/home" element={<Home/>}></Route>
           <Route path="/menu" element={<Menu/>}></Route>
+          <Route path="*" element={<Navigate to="/home"/>}></Route>
         </Routes>
       </Layout>
     </Fragment>

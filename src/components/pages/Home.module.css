@@ -105,11 +105,11 @@
     width:35rem;
     height:30rem;
     object-fit: cover;
-    transition: all 1s ease-out;
+    transition: all .5s ease-out;
 }
 
 .imgFilter{
-    filter: blur(10px);
+    filter: blur(8px);
 }
 
 .wrapper3 div{
