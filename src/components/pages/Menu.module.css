@@ -1,0 +1,75 @@
+.container{
+    background-color: white;
+    width:20rem;
+    height:22rem;
+    text-align: center;
+    box-shadow: 0px 10px 15px -3px rgba(131, 130, 130, 0.1);
+    border-radius: 10px;
+    margin:20px;
+    position: relative;
+}
+
+.container img{
+    width:80%;
+    height:12rem;
+    background-color: white;
+}
+
+.container h2{
+    margin-bottom:10px;
+    background-color: white;
+    font-size: 22px;
+    color: #F3BC58;
+}
+
+.container p{
+    width:18rem;
+    margin:0 1rem;
+    line-height: 20px;
+    font-size: 14px;
+    background-color: white;
+}
+
+.container div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.container div span{
+    font-weight: bolder;
+    font-size: 20px;
+    margin-left:20px;
+}
+
+.button{
+    margin-right: 20px;
+}
+
+/* wrapper */
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin:10px 10rem;
+}
+
+/* marker */
+
+.marker{
+    position: absolute;
+    top:-12px;
+    right:15px;
+    background-color: #F3BC58;
+    color: white;
+    width:35px;
+    height:35px;
+    border-radius: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 10px 15px -3px rgba(131, 130, 130, 0.1);
+}

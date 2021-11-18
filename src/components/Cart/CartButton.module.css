@@ -1,0 +1,25 @@
+.button{
+    position: relative;
+    cursor: pointer;
+}
+
+.icon{
+    width:25px;
+}
+
+.button span{
+    position: absolute;
+    top:-20%; 
+    left:15px;
+    width:15px;
+    height:15px;
+    padding: 1px;
+    background-color: red;
+    font-size: 10px;
+    color: white;
+    border-radius: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}

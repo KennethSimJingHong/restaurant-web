@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { Fragment } from "react";
+import {Route, Routes, Navigate} from 'react-router-dom';
+import {useSelector} from 'react-redux';
+
+import Layout from "./components/Layout/Layout";
+import Home from "./components/pages/Home";
+import Menu from "./components/pages/Menu";
+import Cart from "./components/Cart/Cart";
+import Overlay from "./components/UI/Overlay";
+import CheckoutModal from "./components/UI/CheckoutModal";
 
 function App() {
+  const showCart = useSelector(state => state.ui.cartIsVisible);
+  const showCheckoutModal = useSelector(state => state.ui.isCheckoutValid);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Fragment>
+      <Layout>
+        <CheckoutModal/>
+        {showCheckoutModal && <Overlay/>}
+        {showCart && <Overlay/>}
+        <Cart/>
+        <Routes>
+          <Route path="/" element={<Navigate to="/home"/>}></Route>
+          <Route path="/home" element={<Home/>}></Route>
+          <Route path="/menu" element={<Menu/>}></Route>
+        </Routes>
+      </Layout>
+    </Fragment>
+  )
 }
 
 export default App;

@@ -1,0 +1,148 @@
+.container{
+    width:70vw;
+    height:60vh;
+    display: flex;
+    box-shadow: 0px 10px 15px -3px rgba(131, 130, 130, 0.1);
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    padding: 50px;
+    transition: all 1s ease-out;
+}
+
+/* first section */
+.container section:first-child{
+    flex:2.5;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* section 1 - header */
+.container section:first-child div:first-child span{
+    display: inline-block;
+    width: 25%;
+    text-transform: uppercase;
+    padding:1vh 0;
+    font-size: 12px;
+    font-weight: 800;
+    color: rgb(145, 143, 143);
+}
+
+/* section 1 - content */
+.container section:first-child div:nth-child(2){
+    height: calc(60vh - 5vh);
+    width: 100%;
+    overflow: scroll;
+}
+
+.container section:first-child div:nth-child(2) div{
+    height:9rem;
+}
+
+.container section:first-child div:nth-child(2) div span{
+    width:25%;
+    height:8rem;
+    color:black;
+    display: flex;
+    float: left;
+    font-size: 20px;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+}
+
+.container section:first-child div:nth-child(2) button{
+    outline: none;
+    margin:10px;
+    font-size: 25px;
+    font-weight: 300;
+    border: none;
+    cursor: pointer;
+}
+
+.container section:first-child img{
+    width:10rem;
+    height:7rem;
+    object-fit: contain;
+    float: left;
+}
+
+/* section 2 */
+.container section:nth-child(2){
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-left: 1px solid black;
+    text-align: center;
+}
+
+.container section:nth-child(2) div{
+    margin:20px;
+    width: 100%;
+}
+
+.container section:nth-child(2) span:first-child{
+    text-transform: uppercase;
+    margin-right: 20px;
+    color: rgb(145, 143, 143);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.container section:nth-child(2) span:nth-child(2){
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.container section:nth-child(2) p{
+    margin: 20px 0 80px 0;
+    font-size: 13px;
+}
+
+.container section:nth-child(2) input{
+    margin-right: 5px;
+}
+
+.container section:nth-child(2) .tnc{
+    font-size: 13px;
+    vertical-align: top;
+}
+
+/* animation */
+.CartModalOpen{
+    animation: openModal .5s ease-out forwards;
+}
+
+.CartModalClose{
+    animation: closeModal 0s ease-out forwards;
+}
+
+@keyframes openModal{
+    0% {
+        opacity: 0;
+        transform: translate(-50%,-55%);
+    }
+    50% {
+        opacity: 1;
+        transform: translate(-50%,-45%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%,-50%);
+    }
+}
+
+/* @keyframes closeModal{
+    0% {
+        opacity: 0;
+        transform: translate(-50%,-50%);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%,-55%);
+    }
+} */

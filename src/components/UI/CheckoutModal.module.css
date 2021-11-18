@@ -1,0 +1,73 @@
+.checkoutModal{
+    width:30vw;
+    height:35vh;
+    background-color: white;
+    box-shadow: 0px 10px 15px -3px rgba(131, 130, 130, 0.1);
+    position: absolute;
+    left:50%;
+    transform: translate(-50%,50%);
+    z-index: 3;
+}
+
+.checkoutModal div:first-child{
+    height:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.checkoutModalGColor{
+    background-color: #3FC59D;
+}
+
+.checkoutModalRColor{
+    background-color: #E2747E;
+}
+
+.checkoutModal div:nth-child(2){
+    background-color: white;
+    text-align: center;
+}
+
+.checkoutModal div:nth-child(2) h2{
+    margin:20px 0 10px 0;
+    background-color: white;
+}
+
+.checkoutModal div:nth-child(2) p{
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.checkoutModal div:nth-child(2) button{
+    border: none;
+    outline: none;
+    padding:10px 15px;
+    background-color: #E2747E;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 0px 10px 15px -3px rgba(131, 130, 130, 0.1);
+    cursor: pointer;
+}
+
+
+/* animation */
+.COModalOpen{
+    animation: openModal .5s ease-out forwards;
+}
+
+@keyframes openModal{
+    0% {
+        opacity: 0;
+        transform: translate(-50%,45%);
+    }
+    50% {
+        opacity: 1;
+        transform: translate(-50%,55%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%,50%);
+    }
+}
